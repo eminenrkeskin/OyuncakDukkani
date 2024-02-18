@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>İleri Java Uygulamaları</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<h2>HR220059 - Emine Nur Keskin</h2>
+<h4>Oyuncak Listesi</h4>
+
+<div id="oyuncakListesi">
+    <!-- Oyuncak listesi burada görüntülenecek -->
+</div>
+
+<br>
+
+<!-- Oyuncak Sil Formu -->
+<div id="oyuncakSilForm">
+    <label for="oyuncakID">Oyuncak ID:</label>
+    <input type="number" id="oyuncakID" name="oyuncakID" required>
+    <button type="button" onclick="silOyuncak()">Oyuncak Sil</button>
+    <button type="button" onclick="oyuncakGetir()">Oyuncak Getir</button>
+</div>
+
+<br>
+
+<div id="oyuncakDetay">
+    <!-- Oyuncak detayları burada görüntülenecek -->
+</div>
+
+<br>
+
+<button type="button" onclick="toggleForm('oyuncakEkleForm')">Oyuncak Ekle</button>
+
+
+<!-- Oyuncak Ekle Formu -->
+<div id="oyuncakEkleForm" style="display: none;">
+    <label for="ad">Ad:</label>
+    <input type="text" id="ad" name="ad">
+    <label for="tur">Tür:</label>
+    <input type="text" id="tur" name="tur">
+    <label for="desi">Desi:</label>
+    <input type="text" id="desi" name="desi">
+    <label for="alisFiyati">Alış Fiyatı:</label>
+    <input type="text" id="alisFiyati" name="alisFiyati">
+    <label for="notlar">Notlar:</label>
+    <input type="text" id="notlar" name="notlar">
+    <button type="button" onclick="oyuncakEkle()">Oyuncak Ekle</button>
+</div>
+
+<br>
+
+
+
+
+
+
+<button type="button" onclick="toggleForm('oyuncakGuncelle')">Oyuncak Güncelle</button>
+
+
+<div id="oyuncakGuncelle" style="display: none;">
+    <label for="guncelleId">ID:</label>
+    <input type="text" id="guncelleId" name="guncelleId">
+    <label for="guncelleAd">Ad:</label>
+    <input type="text" id="guncelleAd" name="guncelleAd">
+    <label for="guncelleTur">Tür:</label>
+    <input type="text" id="guncelleTur" name="guncelleTur">
+    <label for="guncelleDesi">Desi:</label>
+    <input type="text" id="guncelleDesi" name="guncelleDesi">
+    <label for="guncelleAlisFiyati">Alış Fiyatı:</label>
+    <input type="text" id="guncelleAlisFiyati" name="guncelleAlisFiyati">
+    <label for="guncelleNotlar">Notlar:</label>
+    <input type="text" id="guncelleNotlar" name="guncelleNotlar">
+
+    <button type="button" onclick="oyuncakGuncelle()">Oyuncak Güncelle</button>
+</div>
+
+<br>
+
+<script>
+    $(document).ready(function () {
+        listele();
+    });
+</script>
+</body>
+</html>
+

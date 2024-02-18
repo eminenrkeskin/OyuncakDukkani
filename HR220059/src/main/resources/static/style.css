@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 100px;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50; /* Başlık arka plan rengi */
+    color: #fff; /* Başlık metin rengi */
+    padding: 12px;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+#oyuncakEkleForm, #oyuncakSilForm, #oyuncakGuncelle{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+#oyuncakDetay {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#oyuncakDetay h4 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#oyuncakDetay p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+button[type="button"] {
+    margin-top: 10px;
+}
